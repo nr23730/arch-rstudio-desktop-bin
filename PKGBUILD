@@ -36,5 +36,7 @@ package() {
 
   ln -s /usr/lib/rstudio/rstudio "$pkgdir/usr/bin/rstudio"
 
+  sed -i 's/rstudio\/rstudio/rstudio\/rstudio --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations /g' "$pkgdir/usr/share/applications/rstudio.desktop"
+
 }
 # vim:ft=sh tabstop=2 expandtab
