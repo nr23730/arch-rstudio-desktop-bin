@@ -32,5 +32,9 @@ package() {
   cd "$srcdir"
   tar Jxpf data.tar.xz -C "$pkgdir"
 
+  install -dm755 "$pkgdir/usr/bin"
+
+  ln -s /usr/lib/rstudio/rstudio "$pkgdir/usr/bin/rstudio"
+
 }
 # vim:ft=sh tabstop=2 expandtab
