@@ -7,16 +7,8 @@ pkgbase = rstudio-desktop-bin
 	arch = x86_64
 	license = GPL
 	depends = r>=3.3.0
-	depends = hicolor-icon-theme
-	depends = shared-mime-info
-	depends = openssl
-	depends = openssl-1.1
-	depends = nss
-	depends = at-spi2-core
-	depends = gtk3
-	depends = alsa-lib
-	depends = libedit
-	depends = postgresql-libs
+	depends = clang
+	depends = libxkbcommon-x11
 	depends = sqlite
 	optdepends = clang: C/C++ and Rcpp support
 	provides = rstudio-desktop=2023.12.1.402
@@ -24,7 +16,7 @@ pkgbase = rstudio-desktop-bin
 	conflicts = rstudio-desktop-git
 	conflicts = rstudio-desktop-preview-bin
 	options = !strip
-	source_x86_64 = https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.12.1-402-amd64.deb
-	sha256sums_x86_64 = 81f221be29eb39efe65be48490c3cd090ddaf8991ea7a089baa0cdd326109e02
+	source_x86_64 = https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.12.1-402-amd64.deb
+	sha256sums_x86_64 = 75542cc24c59404f8d62815bc0e31b43032b5032e651fa9f618dbcdca8aa7cac
 
 pkgname = rstudio-desktop-bin
